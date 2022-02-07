@@ -72,13 +72,8 @@ def getDetails():
 
 @app.route('/db/',methods=['GET','POST'])
 def predict_alerts():
-    response = {
-        'status': 200,
-        'message': 'OK',
-        'db': getDetails()
-    }
 
-    return jsonify(response)
+    return jsonify(getDetails())
 
 if __name__ == '__main__':
     app.run(debug=True)
