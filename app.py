@@ -34,7 +34,7 @@ def db():
   "BBB_permeant": "No",
   "bioavailabilty_score": 0.11,
   "LD50_values": 5000,
-  "toxicity _lass": 5,
+  "toxicity_class": 5,
   "2D": "Yes",
   "3D": "Yes"
  },
@@ -62,7 +62,7 @@ def db():
   "BBB_permeant": "No",
   "bioavailabilty_score": 0.11,
   "LD50_values": 5000,
-  "toxicity _lass": 5,
+  "toxicity_class": 5,
   "2D": "Yes",
   "3D": "Yes"
  },
@@ -90,7 +90,7 @@ def db():
   "BBB_permeant": "No",
   "bioavailabilty_score": 0.55,
   "LD50_values": 3919,
-  "toxicity _lass": 5,
+  "toxicity_class": 5,
   "2D": "Yes",
   "3D": "Yes"
  },
@@ -118,7 +118,7 @@ def db():
   "BBB_permeant": "No",
   "bioavailabilty_score": 0.55,
   "LD50_values": 1600,
-  "toxicity _lass": 4,
+  "toxicity_class": 4,
   "2D": "Yes",
   "3D": "Yes"
  },
@@ -146,7 +146,7 @@ def db():
   "BBB_permeant": "Yes",
   "bioavailabilty_score": 0.55,
   "LD50_values": 550,
-  "toxicity _lass": 4,
+  "toxicity_class": 4,
   "2D": "Yes",
   "3D": "Yes"
  },
@@ -174,7 +174,7 @@ def db():
   "BBB_permeant": "Yes",
   "bioavailabilty_score": 0.55,
   "LD50_values": 250,
-  "toxicity _lass": 3,
+  "toxicity_class": 3,
   "2D": "Yes",
   "3D": "Yes"
  },
@@ -202,7 +202,7 @@ def db():
   "BBB_permeant": "No",
   "bioavailabilty_score": 0.17,
   "LD50_values": 866,
-  "toxicity _lass": 4,
+  "toxicity_class": 4,
   "2D": "Yes",
   "3D": "Yes"
  },
@@ -230,7 +230,7 @@ def db():
   "BBB_permeant": "Yes",
   "bioavailabilty_score": 0.85,
   "LD50_values": 2500,
-  "toxicity _lass": 5,
+  "toxicity_class": 5,
   "2D": "Yes",
   "3D": "Yes"
  },
@@ -258,7 +258,7 @@ def db():
   "BBB_permeant": "Yes",
   "bioavailabilty_score": 0.85,
   "LD50_values": 2500,
-  "toxicity _lass": 5,
+  "toxicity_class": 5,
   "2D": "Yes",
   "3D": "Yes"
  },
@@ -286,7 +286,7 @@ def db():
   "BBB_permeant": "No",
   "bioavailabilty_score": 0.17,
   "LD50_values": 1000,
-  "toxicity _lass": 4,
+  "toxicity_class": 4,
   "2D": "Yes",
   "3D": "Not available"
  },
@@ -314,7 +314,7 @@ def db():
   "BBB_permeant": "Yes",
   "bioavailabilty_score": 0.85,
   "LD50_values": 1600,
-  "toxicity _lass": 3,
+  "toxicity_class": 3,
   "2D": "Yes",
   "3D": "Yes"
  },
@@ -342,7 +342,7 @@ def db():
   "BBB_permeant": "Yes",
   "bioavailabilty_score": 0.85,
   "LD50_values": 1600,
-  "toxicity _lass": 3,
+  "toxicity_class": 3,
   "2D": "Yes",
   "3D": "Yes"
  },
@@ -370,7 +370,7 @@ def db():
   "BBB_permeant": "Yes",
   "bioavailabilty_score": 0.85,
   "LD50_values": 10000,
-  "toxicity _lass": 6,
+  "toxicity_class": 6,
   "2D": "Yes",
   "3D": "Yes"
  },
@@ -398,7 +398,7 @@ def db():
   "BBB_permeant": "No",
   "bioavailabilty_score": 0.17,
   "LD50_values": 11210,
-  "toxicity _lass": 6,
+  "toxicity_class": 6,
   "2D": "Yes",
   "3D": "Not available"
  },
@@ -426,7 +426,7 @@ def db():
   "BBB_permeant": "Yes",
   "bioavailabilty_score": 0.55,
   "LD50_values": 1670,
-  "toxicity _lass": 4,
+  "toxicity_class": 4,
   "2D": "Yes",
   "3D": "Yes"
  },
@@ -454,7 +454,7 @@ def db():
   "BBB_permeant": "No",
   "bioavailabilty_score": 0.55,
   "LD50_values": 1600,
-  "toxicity _lass": 4,
+  "toxicity_class": 4,
   "2D": "Yes",
   "3D": "Yes"
  },
@@ -482,7 +482,7 @@ def db():
   "BBB_permeant": "No",
   "bioavailabilty_score": 0.55,
   "LD50_values": 3650,
-  "toxicity _lass": 5,
+  "toxicity_class": 5,
   "2D": "Yes",
   "3D": "Yes"
  },
@@ -510,7 +510,7 @@ def db():
   "BBB_permeant": "No",
   "bioavailabilty_score": 0.55,
   "LD50_values": 400,
-  "toxicity _lass": 4,
+  "toxicity_class": 4,
   "2D": "yes",
   "3D": "not available"
  },
@@ -538,7 +538,7 @@ def db():
   "BBB_permeant": "No",
   "bioavailabilty_score": 0.17,
   "LD50_values": 400,
-  "toxicity _lass": 4,
+  "toxicity_class": 4,
   "2D": "Yes",
   "3D": "Not available"
  },
@@ -566,7 +566,7 @@ def db():
   "BBB_permeant": "Yes",
   "bioavailabilty_score": 0.55,
   "LD50_values": 5000,
-  "toxicity _lass": 5,
+  "toxicity_class": 5,
   "2D": "Yes",
   "3D": "png downloaded, sdf couldnt download"
  }
