@@ -10787,7 +10787,7 @@ def display_image(filename):
 	return redirect(url_for('static', filename='3D STR/' + filename), code=301)
 
 @app.route('/download/three_d_png')
-def download_3D_PNG(filename):
+def download_3D_PNG():
     zipf = zipfile.ZipFile('3D_Images_Png.zip','w', zipfile.ZIP_DEFLATED)
     for root,dirs, files in os.walk('static/3D STR/'):
         for file in files:
