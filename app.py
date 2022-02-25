@@ -10789,7 +10789,7 @@ def display_image(filename):
 	return redirect(url_for('static', filename='3D STR/' + filename), code=301)
 
 @app.route('/download')
-def download_3D_PNG():
+def download():
     target = 'static/3D STR'
     print(target)
 
