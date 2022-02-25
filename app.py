@@ -1,8 +1,10 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, url_for, redirect
 from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)
+
+THREE_D_FOLDER = 'static/3D STR/'
 
 @app.route('/db/',methods=['GET','POST'])
 def db():
@@ -10776,6 +10778,11 @@ def db():
     }
 
     return jsonify(response)
+
+
+@app.route('/three_d_image/<filename>')
+def display_image(filename):
+	return redirect(url_for('static', filename='3D STR/' + filename), code=301)
 
 if __name__ == '__main__':
     app.run(debug=True)
