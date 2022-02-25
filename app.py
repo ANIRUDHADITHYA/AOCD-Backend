@@ -1,4 +1,6 @@
-from flask import Flask, jsonify, url_for, redirect
+from flask import Flask, jsonify, url_for, redirect, send_file
+from zipfile import ZipFile
+import os
 from flask_cors import CORS
 
 app = Flask(__name__)
@@ -10783,6 +10785,19 @@ def db():
 @app.route('/three_d_image/<filename>')
 def display_image(filename):
 	return redirect(url_for('static', filename='3D STR/' + filename), code=301)
+
+@app.route('/download/three_d_png')
+def download_3D_PNG(filename):
+    zipf = zipfile.ZipFile('3D_Images_Png.zip','w', zipfile.ZIP_DEFLATED)
+    for root,dirs, files in os.walk('static/3D STR/'):
+        for file in files:
+            zipf.write('static/3D STR/'+file)
+    zipf.close()
+    return send_file('3D_Images_Png.zip',
+            mimetype = 'zip',
+            attachment_filename= '3D_Images_Png.zip',
+            as_attachment = True)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
