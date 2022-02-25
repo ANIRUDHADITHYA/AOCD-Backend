@@ -10788,16 +10788,19 @@ def display_image(filename):
 
 @app.route('/download/three_d_png')
 def download_3D_PNG():
-    zipf = zipfile.ZipFile('3D_Images_Png.zip','w', zipfile.ZIP_DEFLATED)
-    for root,dirs, files in os.walk('static/3D STR/'):
-        for file in files:
-            print(file+"")
-            zipf.write('static/3D STR/'+file)
-    zipf.close()
-    return send_file('3D_Images_Png.zip',
-            mimetype = 'zip',
-            attachment_filename= '3D_Images_Png.zip',
-            as_attachment = True)
+    target = 'static/3D STR'
+
+    stream = BytesIO()
+    with ZipFile(stream, 'w') as zf:
+        for file in glob(os.path.join(target, '*.png')):
+            zf.write(file, os.path.basename(file))
+    stream.seek(0)
+
+    return send_file(
+        stream,
+        as_attachment=True,
+        attachment_filename='3D_Images_Png.zip'
+    )
 
 
 if __name__ == '__main__':
