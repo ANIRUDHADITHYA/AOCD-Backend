@@ -10791,7 +10791,7 @@ def display_image(filename):
 @app.route('/download')
 def download():
     target = 'static/3D STR'
-    print(target)updted
+    print(target)
     return target;
 
 
