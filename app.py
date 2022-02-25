@@ -10788,7 +10788,23 @@ def db():
 def display_image(filename):
 	return redirect(url_for('static', filename='3D STR/' + filename), code=301)
 
-@app.route('/download/', methods=['GET','POST'])
+@app.route('/download_2d_image_png/', methods=['GET','POST'])
+def download_2D_PNG():
+    target = 'static/2D STR'
+
+    stream = BytesIO()
+    with ZipFile(stream, 'w') as zf:
+        for file in glob(os.path.join(target, '*.png')):
+            zf.write(file, os.path.basename(file))
+    stream.seek(0)
+
+    return send_file(
+        stream,
+        as_attachment=True,
+        attachment_filename='2d_images_png.zip'
+    )
+
+@app.route('/download_3d_image_png/', methods=['GET','POST'])
 def download_3D_PNG():
     target = 'static/3D STR'
 
@@ -10801,7 +10817,39 @@ def download_3D_PNG():
     return send_file(
         stream,
         as_attachment=True,
-        attachment_filename='arch.zip'
+        attachment_filename='3d_images_png.zip'
+    )
+
+@app.route('/download_2d_image_sdf/', methods=['GET','POST'])
+def download_2D_SDF():
+    target = 'static/2D STR'
+
+    stream = BytesIO()
+    with ZipFile(stream, 'w') as zf:
+        for file in glob(os.path.join(target, '*.sdf')):
+            zf.write(file, os.path.basename(file))
+    stream.seek(0)
+
+    return send_file(
+        stream,
+        as_attachment=True,
+        attachment_filename='2d_images_sdf.zip'
+    )
+
+@app.route('/download_3d_image_sdf/', methods=['GET','POST'])
+def download_3D_SDF():
+    target = 'static/3D STR'
+
+    stream = BytesIO()
+    with ZipFile(stream, 'w') as zf:
+        for file in glob(os.path.join(target, '*.sdf')):
+            zf.write(file, os.path.basename(file))
+    stream.seek(0)
+
+    return send_file(
+        stream,
+        as_attachment=True,
+        attachment_filename='3d_images_sdf.zip'
     )
 
 
