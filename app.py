@@ -10791,6 +10791,7 @@ def download_3D_PNG():
     zipf = zipfile.ZipFile('3D_Images_Png.zip','w', zipfile.ZIP_DEFLATED)
     for root,dirs, files in os.walk('static/3D STR/'):
         for file in files:
+            print(file+"")
             zipf.write('static/3D STR/'+file)
     zipf.close()
     return send_file('3D_Images_Png.zip',
