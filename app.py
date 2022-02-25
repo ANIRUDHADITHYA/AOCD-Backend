@@ -10792,7 +10792,7 @@ def display_image(filename):
 def download():
     target = 'static/3D STR'
     print(target)
-    return target;
+    return jsonify(target);
 
 
 
