@@ -10788,13 +10788,21 @@ def db():
 def display_image(filename):
 	return redirect(url_for('static', filename='3D STR/' + filename), code=301)
 
-@app.route('/download')
-def download():
+@app.route('/download/', methods=['GET','POST'])
+def download_3D_PNG():
     target = 'static/3D STR'
-    print(target)
-    return jsonify(target);
 
+    stream = BytesIO()
+    with ZipFile(stream, 'w') as zf:
+        for file in glob(os.path.join(target, '*.png')):
+            zf.write(file, os.path.basename(file))
+    stream.seek(0)
 
+    return send_file(
+        stream,
+        as_attachment=True,
+        attachment_filename='arch.zip'
+    )
 
 
 if __name__ == '__main__':
