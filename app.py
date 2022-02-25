@@ -10791,19 +10791,10 @@ def display_image(filename):
 @app.route('/download')
 def download():
     target = 'static/3D STR'
-    print(target)
+    print(target)updted
+    return target;
 
-    stream = BytesIO()
-    with ZipFile(stream, 'w') as zf:
-        for file in glob(os.path.join(target, '*.png')):
-            zf.write(file, os.path.basename(file))
-    stream.seek(0)
 
-    return send_file(
-        stream,
-        as_attachment=True,
-        attachment_filename='arch.zip'
-    )
 
 
 if __name__ == '__main__':
