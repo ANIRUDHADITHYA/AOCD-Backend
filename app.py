@@ -15,7 +15,7 @@ def db():
     response = {
         'status' : 200,
         'message' : 'OK',
-        'data' : [
+        "data": [
         {
             "accession_no": "AO001",
             "compound_name": "1-Caffeoylquinic acid",
@@ -1076,7 +1076,7 @@ def db():
             "pubchem_cid": "222284",
             "molf": "C29H50O",
             "mw": "414.71",
-            "filter_id": "PL_AS, AG",
+            "filter_id": "PL_AS_AG",
             "moa": "Pancreatic Lipase, Appetite Suppressant, Adipogenesis",
             "origin": "Plant",
             "sci_name": "Hibiscus rosa-sinensis",
@@ -1386,7 +1386,7 @@ def db():
             "pubchem_cid": "65126",
             "molf": "C20H28O4",
             "mw": "332.4",
-            "filter_id": "AS_AG,PL",
+            "filter_id": "PL_AS_AG",
             "moa": "Appetite Suppressant, Adipogenesis,Pancreatic Lipase",
             "origin": "Plant",
             "sci_name": "Salvia officinalis",
@@ -1634,7 +1634,7 @@ def db():
             "pubchem_cid": "1794427",
             "molf": "C16H18O9",
             "mw": "354.31",
-            "filter_id": "AS_AG,PL",
+            "filter_id": "PL_AS_AG",
             "moa": "Appetite Suppressant, Adipogenesis,Pancreatic Lipase",
             "origin": "Plant",
             "sci_name": "Artemisia argyi",
@@ -2564,7 +2564,7 @@ def db():
             "pubchem_cid": "72276",
             "molf": "C15H14O6",
             "mw": "290.27",
-            "filter_id": "AS,AD",
+            "filter_id": "AS_AG",
             "moa": "Appetite Suppressant,AD",
             "origin": "Plant",
             "sci_name": "Camellia sinensis",
@@ -2967,7 +2967,7 @@ def db():
             "pubchem_cid": "5280961",
             "molf": "C15H10O5",
             "mw": "270.24",
-            "filter_id": "PL_AS, AG",
+            "filter_id": "PL_AS_AG",
             "moa": "Appetite Suppressant,Pancreatic Lipase, Adipogenesis",
             "origin": "Plant",
             "sci_name": "Glycine max",
@@ -10777,8 +10777,8 @@ def db():
             "ld50_val": "5000",
             "toxicity": "5"
         }
-    
-        ]
+    ]
+
     }
 
     return jsonify(response)
