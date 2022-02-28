@@ -11190,7 +11190,7 @@ def db():
     return jsonify(response)
 
 @app.route('/graph/',methods=['GET','POST'])
-def db():
+def graph():
     response = {
         'status' : 200,
         'message' : 'OK',
