@@ -11227,7 +11227,7 @@ def graph():
         },
         'class_of_compounds' : {
             'data' : [
-                ["Class of Compounds", "No. of Compounds"], ["Flavonoid", 100], ["Terpene", 34], ["Hydrolase", 28], ["Prenol Lipid", 26], ["Polyketide", 19], ["Tannin", 11], ["Phenolic Compound", 11], ["Alkaloid", 11], ["Saponin", 10], ["Glycoside", 8], ["Unsaturated Fatty Acid", 8], ["Fatty Acyls", 7], ["Steroids and Derivatives", 6],  ["Cinnamic Acid and Derivatives", 6], ["Naphthoquinone Derivative", 5], ["Others", 59]
+                ["Class of Compounds", "No. of Compounds"], ["Flavonoid", 100], ["Terpene", 34], ["Hydrolase", 28], ["Prenol Lipid", 26], ["Polyketide", 19], ["Tannin", 11], ["Phenolic Compound", 11], ["Alkaloid", 11], ["Saponin", 10], ["Glycoside", 8], ["Unsaturated Fatty Acid", 8], ["Fatty Acyls", 7], ["Steroids & Derivatives", 6],  ["Cinnamic Acid & Derivatives", 6], ["Naphthoquinone Derivative", 5], ["Others", 59]
             ]
         },
         'year_of_publication' : {
